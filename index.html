@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
     <link rel="stylesheet" href="assets/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SheCodes Final Project</title>
   </head>
   <body>
-    <header>
-      <h1>SheCodes Final Project</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div>Here you will receive the poem</div>
-    </main>
-    <footer>
-      Crafted with care & love 💚 by
-      <a href="https://github.com/AnaCury" target="_blank">Ana Cury</a> and is
-      open sourced on
-      <a href="https://github.com/AnaCury/shecodes-project-ai" target="_blank"
-        >Github</a
-      >. Hosted on
-      <a href="https://lucky-marshmallow-60db8e.netlify.app/" target="_blank"
-        >netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>SheCodes Final Project</h1>
+      </header>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter the topic of the poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="styled-button" />
+        </form>
+        <div class="poem">
+          Golden sun, a sky so blue, Hopeful heart, a spirit new.
+        </div>
+      </main>
+      <footer>
+        Crafted with care & love <i class="bx bxs-heart"></i> by
+        <a href="https://github.com/AnaCury" target="_blank">Ana Cury</a> and is
+        open sourced on
+        <a href="https://github.com/AnaCury/shecodes-project-ai" target="_blank"
+          >Github</a
+        >. Hosted on
+        <a href="https://lucky-marshmallow-60db8e.netlify.app/" target="_blank"
+          >netlify</a
+        >.
+      </footer>
+    </div>
     <script src="assets/script.js"></script>
   </body>
 </html>
