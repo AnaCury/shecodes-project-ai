@@ -1,13 +1,9 @@
-This code generates and displays a poem based on user instructions.
+This code snippet is designed to generate and display a short romantic poem based on user instructions. Here's a brief synopsis of its functionality:
 
-Functions:
-displayPoem(response): This function takes an API response containing the generated poem and uses the Typewriter library to display it character by character with a typing effect.
-generatePoem(event): This function handles the form submission event.
-It retrieves the user's instructions from the input field.
-It constructs a prompt and context for the poem generation API call.
-The prompt specifies that the user wants a short, romantic poem based on their instructions.
-The context informs the AI model that it should act as a romantic poem expert aiming to write a 4-line poem following the user's instructions.
-It builds the API URL using the user's prompt, context, and an API key.
-It uses Axios to make a GET request to the API and then calls the displayPoem function with the response data (containing the generated poem).
-Event Listener: The code adds an event listener to the form element.
-When the user submits the form, the generatePoem function is triggered, initiating the poem generation process.
+displayPoem(response): This function takes a response from an API call, extracts the generated poem from the response data, and uses the Typewriter library to animate the display of the poem on a webpage element with the ID "poem". The poem is typed out one character at a time with a delay of 1 millisecond between characters.
+
+generatePoem(event): This function is triggered when a form is submitted. It prevents the default form submission, gathers user input from a text box with the ID "user-instructions", and constructs a prompt for the API that asks for a poem. The context specifies that the poem should be four lines long. An API request is made to a specified endpoint using Axios, and upon receiving a response, the displayPoem function is called to show the poem.
+
+Event Listener: An event listener is attached to the form, which listens for the "submit" event and calls the generatePoem function when triggered.
+
+Overall, the code facilitates the creation of a romantic poem based on user input and displays it in a visually engaging manner.
